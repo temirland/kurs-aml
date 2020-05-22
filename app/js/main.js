@@ -5,7 +5,11 @@ $(function(){
 
     });
 
-
+    $("body").niceScroll({
+        cursorborder: "none"
+    });
+    $(".news__day-scroll").niceScroll();
+    $(".news__week-scroll").niceScroll();
 
 
 
