@@ -485,8 +485,85 @@
 }
 
 
-
-
-
-
 // end library
+
+// Start organizations
+
+.organizations {
+    margin-bottom: 120px;
+    &__title {
+        font-size: 30px;
+        @include mont;
+        color: $main;
+        margin-bottom: 20px;
+    }
+    &__description {
+        padding-bottom: 30px;
+        margin-bottom: 25px;
+        border-bottom: 1px solid $main;
+        line-height: 24px;
+        font-size: 18px;
+        text-indent: 20px;
+    }
+    &__links-title {
+        font-size: 24px;
+        @include mont;
+        color: $main;
+        margin-bottom: 20px
+    }
+    &__links {
+        display: block;
+        padding-bottom: 30px;
+        border-bottom: 1px solid $main;
+        li + li {
+            margin-top: 15px;
+        }
+    }
+}
+
+
+.organizations__inner {
+    display: flex;
+}
+.tabs {
+    font-size: 14px;
+    margin-right: 50px;
+    max-width: 325px;
+    width: 100%;
+    .tab {
+        cursor: pointer;
+        display: inline-block;
+    }
+    .tab + .tab{
+        margin-top: 25px;
+    }
+}
+.tab_content {
+    max-width: 745px;
+    display: block;
+}
+.tab.active {
+    color: $main;
+    font-weight: 500;
+}
+.tab-item {
+    display: none;
+    &:first-child {
+        display: block;
+    }
+}
+
+.aml__top.organizations__news {
+    border-top: none;
+    height: 80px;
+}
+.aml__top-title.organizations__news {
+    font-size: 24px;
+}
+
+
+
+
+
+
+// end organizations
